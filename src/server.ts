@@ -8,6 +8,7 @@ const app = express();
 payload.init({
   secret: process.env.PAYLOAD_SECRET,
   mongoURL: process.env.MONGODB_URI,
+  license: process.env.PAYLOAD_LICENSE_KEY,
   express: app,
   onInit: () => {
     payload.logger.info(`Payload Admin URL: ${payload.getAdminURL()}`);
