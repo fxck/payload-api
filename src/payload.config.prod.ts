@@ -5,7 +5,7 @@ import Tags from './collections/Tags';
 import Users from './collections/Users';
 
 export default buildConfig({
-  serverURL: 'https://api.payloadadd.fxck.dev',
+  serverURL: 'https://api.payloadapp.fxck.dev',
   admin: {
     user: Users.slug,
   },
