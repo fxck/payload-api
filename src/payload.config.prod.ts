@@ -5,7 +5,7 @@ import Tags from './collections/Tags';
 import Users from './collections/Users';
 
 export default buildConfig({
-  serverURL: 'https://api-2003d-3000.app.zerops.io',
+  serverURL: 'https://api.payloadadd.fxck.dev',
   admin: {
     user: Users.slug,
   },
