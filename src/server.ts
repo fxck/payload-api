@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import payload from 'payload';
 
 require('dotenv').config();
@@ -16,5 +17,8 @@ payload.init({
 });
 
 // Add your own express routes here
+app.use(cors({
+  origin: '*'
+}));
 
 app.listen(3000);
