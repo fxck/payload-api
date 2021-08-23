@@ -3,6 +3,7 @@ env
 
 # compiled output
 /dist
+/build
 
 # dependencies
 /node_modules
