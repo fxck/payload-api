@@ -5,6 +5,11 @@ import payload from 'payload';
 require('dotenv').config();
 const app = express();
 
+// Add your own express routes here
+app.use(cors({
+  origin: '*'
+}));
+
 // Initialize Payload
 payload.init({
   secret: process.env.PAYLOAD_SECRET,
@@ -16,9 +21,6 @@ payload.init({
   },
 });
 
-// Add your own express routes here
-app.use(cors({
-  origin: '*'
-}));
+
 
 app.listen(3000);
