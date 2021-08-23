@@ -2,4 +2,4 @@ use: [nodejs@14]
 run:
   - yarn install
   - yarn build
-deploy: ['dist/', 'build/', 'package.json']
+deploy: ['dist/', 'build/', 'node_modules/', 'package.json']
